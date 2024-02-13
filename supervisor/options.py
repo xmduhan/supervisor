@@ -55,6 +55,7 @@ from supervisor import states
 from supervisor import xmlrpc
 from supervisor import poller
 
+
 def _read_version_txt():
     mydir = os.path.abspath(os.path.dirname(__file__))
     version_txt = os.path.join(mydir, 'version.txt')
@@ -115,6 +116,7 @@ class Options:
                        'etc/supervisord.conf',
                        '/etc/supervisord.conf',
                        '/etc/supervisor/supervisord.conf',
+                       os.path.join(os.path.expanduser('~'), '.config/supervisor/supervisord.conf'),
                        ]
         self.searchpaths = searchpaths
 

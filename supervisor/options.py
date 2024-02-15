@@ -116,7 +116,7 @@ class Options:
                        'etc/supervisord.conf',
                        '/etc/supervisord.conf',
                        '/etc/supervisor/supervisord.conf',
-                       os.path.join(os.path.expanduser('~'), '.config/supervisor/supervisord.conf'),
+                       os.path.join(os.path.expanduser('~'), '.local/etc/supervisord.conf'),
                        ]
         self.searchpaths = searchpaths
 
